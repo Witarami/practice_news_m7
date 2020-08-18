@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;515;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;515;600;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 222px;
+    background: url('https://cdn.pixabay.com/photo/2019/07/30/09/53/cow-4372534_960_720.jpg') bottom no-repeat;
+    background-size: cover;
+    font-family: 'Comfortaa', cursive;
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 6rem;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0), 4px 4px 4px rgb(255, 196, 0);
+}
+
+.news {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    margin: 0;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+}
+
+.news {
+    background-color: steelblue;
+    padding: 50px 0 32px;
+}
+
+.news article:nth-child(2n) {
+    background-color: rgb(252, 209, 93);
+    margin: 0 auto 32px;
+    padding: 6px 15px;
+}
+
+.new::after {
+    content: "NEW";
+    color: red;
+    font-size: 0.7em;
+    vertical-align: top;
+}
+
+article {
+    width: 93%;
+    margin: 0 auto 32px;
+    padding: 6px 15px;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+article a, p {
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 2px rgb(0, 0, 0), 3px 3px 3px rgb(255, 196, 0);
+    text-decoration: none;
+}
+
+article a:hover {
+    color: #0085a1;
+}
+
+article a:active {
+    color: red;
+}
+
+article h2 {
+    font-family: 'Comfortaa', cursive;
+    margin-bottom: 5px;
+}
+
+.article-meta {
+    color: rgb(0, 0, 0);
+    margin-bottom: 5px;
+}
+
+article img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+footer {
+    padding-top: 20px;
+    padding-bottom: 60px;
+    text-align: center; 
+}
+
+footer .links {
+    margin-bottom: 50px;
+}
+
+footer .links > a {
+    color: #636b6f;
+    padding: 0 25px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+footer a:hover {
+    color: #a10000;
+}
+
+footer a:active {
+    color: #13a100;
+}
+
+.copyright {
+    color: rgb(108, 117, 125);
+    font-family: 'Times New Roman', Times, serif;
+}
